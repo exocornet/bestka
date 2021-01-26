@@ -1,0 +1,87 @@
+include ../../node_modules/bempug/index
+- BEMPUG.modifier = '_';
+
+
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title= "SMM менеджер"
+  body
+
+    header.header
+
+     div.header__top
+       a.header__link(href="#") СПИСОК УСЛУГ
+       a.header__link.logo(href="#")
+        img(src="/img/inst.png")
+        |EXOCORNET
+       a.header__link(href="#") ВХОД/РЕГИСТРАЦИЯ
+
+     div.header__center
+       h1.header__h1
+        |ПРОКАЧАЙ СВОЙ
+        br
+        |ИНСТАГРАМ!
+
+     div.slider
+       div.slider__wrap-content
+         a.slider__arrow-prev(href="#")
+          img(src="/img/arrow-prev.png")
+         div.slider__card
+           img(src="/img/ico-slider1.png")
+           p 1000 подписчиков 30 руб
+         div.slider__card
+           img(src="/img/ico-slider2.png")
+           p 1000 просмотров 5 руб
+         div.slider__card
+           img(src="/img/ico-slider3.png")
+           p 1000 просмотров 5 руб
+         a.slider__arrow-next(href="#")
+           img(src="/img/arrow-next.png")
+
+       div.slider__wrap-pagin
+         button.slider__pagin-link.slider__pagin-link_active
+         button.slider__pagin-link
+         button.slider__pagin-link
+
+     div.header__bottom
+       img.header__ico(src="/img/header-ico1.png")
+       img.header__ico(src="/img/header-ico2.png")
+       img.header__ico(src="/img/header-ico3.png")
+
+    div.wrapper-background
+
+      main.main
+
+        h2.main__heading НАШИ УСЛУГИ
+
+        article.main__services
+          sections.main__service-item
+            h3.service-item__heading ПОДПИСЧИКИ
+            img.service-item__ico(src="/img/service1.png")
+          sections.main__service-item
+            h3.service-item__heading ЛАЙКИ
+            img.service-item__ico(src="/img/service2.png")
+          sections.main__service-item.main__service-item_active
+            h3.service-item__heading ПРОСМОТРЫ
+            img.service-item__ico(src="/img/service3.png")
+          sections.main__service-item
+            h3.service-item__heading КОММЕНТАРИИ
+            img.service-item__ico(src="/img/service4.png")
+          sections.main__service-item
+            h3.service-item__heading IGTV
+            img.service-item__ico(src="/img/service5.png")
+          sections.main__service-item
+            h3.service-item__heading STORIES
+            img.service-item__ico(src="/img/service6.png")
+
+        article.main__descript
+          section.descript__item Просмотры — главный показатель количества живой аудитории на странице.
+          section.descript__item Просмотры пришли на замену лайкам под видео-публикациями. Просмотры явно дают понять какой охват аудитории имеют публикации на вашей странице, есть ли активный трафик на публикации или у вас активничают только боты.
+          section.descript__item Это очень важный показатель, которым часто пренебрегают. А ведь количество просмотров должно быть значительно больше количества лайков. Если под видео мало просмотров - это сразу выдает нехватку на странице живой аудитории.
+
+      footer.footer
+        a.header__link.logo(href="#")
+          img(src="/img/inst.png")
+          | EXOCORNET
+        span.year 2021
